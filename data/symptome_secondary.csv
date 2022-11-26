@@ -1,0 +1,103 @@
+"Ciliopathy / Clinical Features","General Titles","Ataxia-telangiectasia-like Disorder","Birt-Hogg-Dubé Syndrome","Cornelia de Lange Syndrome","Cone-Rod Dystrophy","Carpenter Syndrome","Juvenile Myoclonic Epilepsy","Congenital Heart Disease","Holoprosencephaly","Visceral Heterotaxy","Leber Congenital Amaurosis","Laurence–Moon Syndrome","Multinucleated Neurons, Anhydramnios, Renal Dysplasia, Cerebellar Hypoplasia, and Hydranencephaly","Medulloblastoma","Mental Retardation, Truncal Obesity, Retinal Dystrophy, and Micropenis","Neonatal Sclerosing Cholangitis","Pallister-Hall Syndrome","Retinitis Pigmentosa","Spinocerebellar Ataxia","Simpson-Golabi-Behmel Syndrome","Short Stature, Onychodysplasia, Facial Dysmorphism, and Hypotrichosis","STAR Syndrome","Townes-Brocks Syndrome","Usher Syndrome"
+"Absence of The Pupillary Reflex","Ophthalmic Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Absence of The Telencephalon","Cerebral Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Acholic Stools","Others",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA
+"Acrocephaly","Cerebral Anomalies",NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Anhydramnios","Others",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Anomalies of The Lower Jaw","Facial Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA
+"Anteverted Nares","Nasal Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA
+"Ataxia","Neural Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Atresia","Others",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA
+"Blindness","Ophthalmic Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA
+"Brachydactyly","Skeletal Anomalies",NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA
+"Cardiac Anomalies/Arrhythmias/Anomalies","Coronary and Vascular Anomalies",NA,NA,1,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA
+"Central Nervous System Anomalies","Neural Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA
+"Cerebral Anomalies","Cerebral Anomalies",1,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,1
+"Cholestasis","Liver Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA
+"Cleft Lip","Facial Anomalies",NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA
+"Cleft Palate","Facial Anomalies",NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Cognitive Impairment","Neural Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA
+"Color Vision Deficit","Ophthalmic Anomalies",NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Congenital Heart Defects","Coronary and Vascular Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA
+"Cranial Anomalies","Facial Anomalies",NA,NA,NA,NA,1,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Decreased Central Vision","Ophthalmic Anomalies",NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Deformed External Ears","Aural Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA
+"Epilepsy","Neural Anomalies",NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Eye Anomalies","Ophthalmic Anomalies",1,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,1,1,NA,NA,NA,NA,NA,NA,NA,1,NA,NA
+"Eye Rubbing or Poking","Ophthalmic Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Facial Dysmorphism","Facial Anomalies",NA,NA,1,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA
+"Fatigue","Others",NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Forebrain Malformation","Cerebral Anomalies",NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Frontal Balding","Facial Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA
+"Gastroesophageal Reflux","Digestive Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA
+"Gastrointestinal Dysfunction","Digestive Anomalies",NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Genital Anomalies","Reproductive Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,1,NA,1,NA
+"Genitourinary Malformations","Others",NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Growth Deficiency","Hormonal Anomalies",NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,1,1,NA,NA
+"Growth Hormone Deficiency","Hormonal Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Hearing Loss","Aural Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,1,1
+"Hemeralopia","Ophthalmic Anomalies",NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Hernia","Organ Anomalies",NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Hirsutism","Others",NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Hydrocephalus","Cerebral Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Hypertelorism","Ophthalmic Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,1,NA
+"Hypertension","Coronary and Vascular Anomalies",NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA
+"Hypertrichosis","Others",NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Hypogenitalism","Reproductive Anomalies",NA,NA,NA,NA,1,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Hypoplasia","Organ Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA
+"Hypotelorism","Organ Anomalies",NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Hypothalamic Hamartoma","Cerebral Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA
+"Immunodeficiency","Others",1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Impaired Psychomotor Speed and Motor Function","Neural Anomalies",NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA
+"Intellectual Disability","Neural Anomalies",NA,NA,1,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Limb Anomalies","Skeletal Anomalies",NA,NA,1,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,1,NA,NA,NA
+"Limited Exercise Ability","Neural Anomalies",NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Liver Anomalies","Liver Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA
+"Loss of Balance and Coordination","Others",1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,1,NA,NA,NA,NA,NA
+"Loss of Peripheral Field","Ophthalmic Anomalies",NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Macrocephaly","Cerebral Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA
+"Macrostomia","Facial Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA
+"Mental Deficiency/Retardation","Neural Anomalies",NA,NA,NA,NA,1,NA,NA,NA,NA,NA,1,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,1
+"Microcephaly","Cerebral Anomalies",NA,NA,1,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Nausea","Digestive Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Neonatal Icterus","Others",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA
+"Night Blindness","Ophthalmic Anomalies",NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA
+"Nystagmus","Digestive Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA
+"Obesity","Digestive Anomalies",NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Ophthalmoplegia","Ophthalmic Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA
+"Overgrowth","Others",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA
+"Parkinsonism","Neural Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA
+"Photophobia","Ophthalmic Anomalies",NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Photoreceptors Dysfunction","Ophthalmic Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA
+"Polydactyly","Skeletal Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,1,NA,NA,NA,NA
+"Polyhydramnios","Others",NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA
+"Postnatal Growth Failure/Retardation","Others",NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Prenatal Growth Retardation","Others",NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Proximal Placement of The Thumb","Organ Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Pulmonary Cysts","Organ Anomalies",NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Pyloric Stenosis","Organ Anomalies",NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Radial Dysplasia","Skeletal Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Reading Difficulties","Neural Anomalies",NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA
+"Reduced Odor Identification","Others",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+"Renal Anomalies","Renal Anomalies",NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,1,NA,NA,NA,NA,NA,1,NA,NA
+"Reproductive Anomalies","Reproductive Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1,NA
+"Respiratory Insufficiency","Respiratory Anomalies",NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Retinal Degeneration","Ophthalmic Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Retinal Dystrophy","Ophthalmic Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Retinitis Pigmentosa","Ophthalmic Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+"Seizures","Neural Anomalies",NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA
+"Sensitivity To Ionising Radiation","Others",1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Severe Hydranencephaly","Cerebral Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Short Stature","Skeletal Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA
+"Situs Ambiguus","Organ Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Situs Inversus","Organ Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Skeletal Abnormalities","Skeletal Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA
+"Small Nose","Facial Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA
+"Syndactyly","Skeletal Anomalies",NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA
+"Telecanthus","Facial Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA
+"Tongue Anomalies","Facial Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA
+"Triphalangeal Thumb","Organ Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Visual Loss","Ophthalmic Anomalies",NA,NA,NA,1,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,1,NA
+"Vomiting","Digestive Anomalies",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Widely Spaced or Irregular Teeth","Facial Anomalies",NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Widened Nasal Bridge","Facial Anomalies",NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA
