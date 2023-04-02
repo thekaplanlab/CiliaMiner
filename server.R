@@ -9,13 +9,12 @@ server <- function(input, output, session) {
   
   #Homepage Gene Search
   output$search_table <- DT::renderDataTable({
-    if( !((input$search) %in% unique(searching_gene))){
+    if( !(toupper((input$search)) %in% toupper(unique(searching_gene)))){
       if ( input$search != ""){ # Send sweet alert 
         sendSweetAlert(
           session = session,
           title = "This is not a ciliopathy related gene",
-          text = tags$span(tags$h3("Please try another gene"),tags$h4("Search bar is case-sensitive!"),
-                           tags$h4("Please use uppercase letter")),
+          text = tags$span(tags$h3("Please try another gene")),
           type = "info",
           html = TRUE,
           showCloseButton = TRUE
@@ -23,7 +22,7 @@ server <- function(input, output, session) {
       }
     }
      #Create Result Table
-    if(input$search %in% searching_gene ){
+    if(toupper((input$search)) %in% toupper(unique(searching_gene)) ){
       {colnames(homosapiens_ciliopathy)[3] <- "OMIM<br>Phenotype Number"
         colnames(homosapiens_ciliopathy)[4] <- "Disease/Gene<br>Reference"
         colnames(homosapiens_ciliopathy)[5] <- "Human<br>Gene ID"
@@ -34,7 +33,6 @@ server <- function(input, output, session) {
       homosapiens_ciliopathy <- homosapiens_ciliopathy[,c(1,6,8,10)]
       
       DT::datatable(homosapiens_ciliopathy,rownames = NULL,escape = FALSE,
-                    
                     options = list(dom = 'lt',initComplete = JS("function(settings, json) {$(this.api().table().header()).css({'white-space' : 'nowrap'});}"),
                                    server = FALSE,
                                    pageLength = 10,

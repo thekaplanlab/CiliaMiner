@@ -25,7 +25,7 @@ library(base)            # R base functions
 
 
 
-load("env/env.rdata")   # Load Requiring Table
+load("data/env.rdata")   # Load Requiring Table
 
 icons <- icon_set("www/") #Icon set 
 
@@ -43,9 +43,6 @@ wh_matrix3 <- data.matrix(wh_matrix3)}
 
 #Merge pure and secondary Ciliopathies
 list_Df <- rbind(purelist,secondarylist)
-
-
-
 
 
 #Color change function was used reordering symptoms icon colour.
@@ -316,7 +313,7 @@ check_multiple_id <- function (your_table2,your_table_col) {
   }
   ids <- sapply(ids, paste, collapse=",")
   your_table2[[your_table_col]] <- ids
-  your_table2[[your_table_col]] <- str_replace(your_table2[[your_table_col]],",","<br>")
+  your_table2[[your_table_col]] <- str_replace(your_table2[[your_table_col]],",",", <br>")
   return(your_table2)
   }
 
