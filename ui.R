@@ -342,7 +342,7 @@ ui <-
              {
              tabPanel("Submit Your Gene",fluidPage(
                #Submit Gene Form
-                      tags$iframe(src = 'https://forms.gle/qH51JcMtovZhtyYG7',
+                      tags$iframe(src = 'https://forms.gle/knog1LnXVnDW57fL6',
                                   width = '50%',
                                   style="height: 100vh;",
                                   id = "google_form",
