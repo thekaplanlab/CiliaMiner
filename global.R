@@ -325,7 +325,7 @@ reference_sorter <- function (your_table) {
     human_which <- which(your_table$'Human Gene ID' == "<a href= 'https://www.ncbi.nlm.nih.gov/gene/NA' target='_blank '>NA</a>")
     your_table$'Human Gene ID'[human_which] <- "No Gene ID"
   }
-  
+  your_table$'Human Gene Name' <- paste0("<a href= '","https://convart.org/search?q=",your_table$'Human Gene Name',"' target='_blank '>",your_table$'Human Gene Name',"</a>")
   your_table$'OMIM Phenotype Number' <- paste0("<a href= '","https://www.omim.org/entry/",your_table$'OMIM Phenotype Number',"' target='_blank '>",your_table$'OMIM Phenotype Number',"</a>")
   if (length(which(your_table$'OMIM Phenotype Number' == "<a href= 'https://www.omim.org/entry/No MIM Number' target='_blank '>No MIM Number</a>")) > 0){
     omim_which <- which(your_table$'OMIM Phenotype Number' == "<a href= 'https://www.omim.org/entry/No MIM Number' target='_blank '>No MIM Number</a>")
