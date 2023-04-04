@@ -1,4 +1,4 @@
-"Ciliopathy","Abbreviation","OMIM Phenotype Number","Disease/Gene Reference","Human Gene ID","Human Gene Name","Gene MIM Number","C.reinhardtii Gene Name","Subcellular Localization","Localisation Reference","Synonym","synonym"
+"Ciliopathy","Abbreviation","OMIM Phenotype Number","Disease/Gene Reference","Human Gene ID","Human Gene Name","Gene MIM Number","C. reinhardtii Gene Name","Subcellular Localization","Localisation Reference","Synonym","synonym"
 "Ataxia-telangiectasia-like Disorder","ATLD1","604391","10612394, 11371508",4361,"MRE11","600814","MRE11","Nucleoplasm","25613900","MRE11;MRE11;ENSG00000020922; ATLD; HNGS1; MRE11A; MRE11B","ATLD;"
 "Autosomal Dominant Polycystic Kidney Disease","PKD2","613095","7825585, 11438989",5311,"PKD2","173910","PKD2","Cilia","12239239, 12062067","PKD2;PKD2;ENSG00000118762; PC2; PKD4; Pc-2; APKD2; TRPP2","POLYCYSTIC KIDNEY DISEASE, ADULT, TYPE II; APKD2;"
 "Autosomal Dominant Polycystic Kidney Disease","PKD3","600666","27259053",23193,"GANAB","104160","GANAB","Endoplasmic reticulum","25613900","GANAB;GANAB;ENSG00000089597; G2AN; GIIA; PKD3; GLUII","POLYCYSTIC KIDNEY DISEASE, ADULT, TYPE III; APKD3;"
