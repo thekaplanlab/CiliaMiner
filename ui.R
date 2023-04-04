@@ -230,6 +230,16 @@ ui <-
                             
                           
                           ))))},
+             #Gene Search Page
+             {
+               tabPanel("Gene Search"
+                        
+                        
+                        
+                        
+                        
+                        )
+             },
 
              #Ciliopathy Gene Orthologs Page
              {
