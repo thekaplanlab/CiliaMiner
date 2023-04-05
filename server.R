@@ -951,7 +951,39 @@ server <- function(input, output, session) {
   })}
 
   }
- 
+  
+  #Ortholog Human Chlamydomonas reinhardtiis Table
+  {  output$ortholog_human_creinhardtii <- DT::renderDataTable({
+    ortholog_human_creinhardtii$`C. reinhardtii Gene Name` <- paste0("<a href= '"," https://www.ncbi.nlm.nih.gov/gene/?term=Chlamydomonas+reinhardtiis "
+                                                                              ,ortholog_human_creinhardtii$`C. reinhardtii Gene Name`,"' target='_blank '>",ortholog_human_creinhardtii$`C. reinhardtii Gene Name`,"</a>")
+    ortholog_human_creinhardtii <- reference_sorter(ortholog_human_creinhardtii)
+    {colnames(ortholog_human_creinhardtii)[3] <- "OMIM<br>Phenotype Number"
+      colnames(ortholog_human_creinhardtii)[4] <- "Disease/Gene<br>Reference"
+      colnames(ortholog_human_creinhardtii)[5] <- "Human<br>Gene ID"
+      colnames(ortholog_human_creinhardtii)[6] <- "Human Gene<br>Name"
+      colnames(ortholog_human_creinhardtii)[7] <- "Gene MIM<br>Number"
+      colnames(ortholog_human_creinhardtii)[8] <- "C. reinhardtii<br>Gene Name"
+      colnames(ortholog_human_creinhardtii)[9] <- "Subcellular<br>Localization"
+      colnames(ortholog_human_creinhardtii)[10] <- "Localisation<br>Reference"
+    }
+    DT::datatable(ortholog_human_creinhardtii, escape = FALSE,extensions = 'Buttons',
+                  options = list(dom = 'Blfrtip', 
+                                 server = FALSE,
+                                 autoWidth = TRUE,
+                                 initComplete = JS("function(settings, json) {$(this.api().table().header()).css({'white-space' : 'nowrap'});}"),
+                                 searchHighlight = TRUE,
+                                 columnDefs = list(list(targets = 1, className = "dt-left"),
+                                                   list(targets = c(11,12), visible = FALSE),
+                                                   list(targets = c(2:10), className="dt-center")),
+                                 lengthMenu = c(10,25,50,100,nrow(ortholog_human_creinhardtii)),
+                                 buttons = c('copy', 'csv', 'excel', 'pdf', 'print')))
+    
+  })}
+  
+  
+  
+  
+  
   #Symptomes and Disease Page 
   {
     {xs <- reactive({ #Reactive element for detection user input
