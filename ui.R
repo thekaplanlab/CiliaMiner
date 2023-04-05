@@ -314,6 +314,17 @@ ui <-
                                      column(6,
                                             #Caenorhabditis elegans Table Output
                                             div(DT::dataTableOutput("ortholog_human_celegans")),
+                                            style = "font-size:100%; width:100%"))),
+                          #Chlamydomonas reinhardtii Genes and Orthologs
+                          tabPanel(em("Chlamydomonas reinhardtii"),
+                                   br(),
+                                   p("This page lists unicellular green algea ciliopathy genes which are orthologs with human genes.
+                                      The Disease/Gene Reference column in the table offers a PubMed ID relating to associated diseases and genes, whilst the ciliary localization column displays data from mammalian and worm studies."),
+                                   br(),
+                                   fluidPage(
+                                     column(6,
+                                            #Chlamydomonas reinhardtiis Table Output
+                                            div(DT::dataTableOutput("ortholog_human_creinhardtii")),
                                             style = "font-size:100%; width:100%")))
                           )))},
              
