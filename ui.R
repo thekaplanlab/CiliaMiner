@@ -232,13 +232,26 @@ ui <-
                           ))))},
              #Gene Search Page
              {
-               tabPanel("Gene Search"
+               tabPanel("Gene Search",fixedRow(column(12,
+                        p(strong("Search for a gene to list associated ciliopathy disorder(s)"),align = "middle", style = "font-size:30px; color: #ff7f0e"),
+                        tabPanel("Gene Search",column(12,align="middle",
+                                                      #Search Box
+                                                      searchInput(inputId = "search_gene_2",label = "",
+                                                                  placeholder = "Search by Human Gene Name and Gene ID",
+                                                                  btnSearch = icon("search"),
+                                                                  btnReset = icon("remove",verify_fa = FALSE),
+                                                                  width = "50%",),
+                                                      tags$style(type="text/css", "#search_text {font-size: 160%;height:50px}"),
+                                                      tags$style(type="text/css", "#search_search {font-size: x-large;height:50px;color: #ff7f0e}"),
+                                                      tags$style(type="text/css", "#search_reset {font-size: x-large;height:50px;color: #ff7f0e}"),
+                                                      tags$style(type="text/css", ".nav-pills {font-size: x-large;}"),
+                                                      HTML(rep("<br/><br/>", 1)),
+                                                      #Gene Search Result Table
+                                                      fixedRow(box(width = 12,background = "orange",status = 'primary',align = "left",
+                                                                   dataTableOutput('search_gene'),br(),style = "font-size:100%; width:100%")),))
                         
                         
-                        
-                        
-                        
-                        )
+                        )))
              },
 
              #Ciliopathy Gene Orthologs Page
