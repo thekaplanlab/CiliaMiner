@@ -45,6 +45,71 @@ wh_matrix3 <- data.matrix(wh_matrix3)}
 list_Df <- rbind(purelist,secondarylist)
 
 
+
+
+#Gene_Search Funtion was used generating gene search results
+{
+  gene_searh_function <- function(gene_name){
+    gene_name <- toupper(gene_name)
+    search_detect <- na.omit(ortholog_gene_synonym[str_detect(toupper(ortholog_gene_synonym$Synonym),paste0(gene_name,"\\b")),1])
+    result_table <- all_ortholog[all_ortholog$'Human Gene Name' == search_detect,]
+    result_table <- unique(result_table)
+    result_table <- result_table[rowSums(is.na(result_table)) != ncol(result_table), ]
+    result_table <-reference_sorter(result_table)
+    
+    #Column ordering
+    {colnames(result_table)[3] <- "OMIM<br>Phenotype<br>Number"
+      colnames(result_table)[4] <- "Disease/Gene<br>Reference"
+      colnames(result_table)[5] <- "Human<br>Gene ID"
+      colnames(result_table)[6] <- "Human Gene<br>Name"
+      colnames(result_table)[7] <- "Gene MIM<br>Number"
+      colnames(result_table)[8] <- "M. musculus<br>Gene Name"
+      colnames(result_table)[9] <- "D. rerio<br>Gene Name"  
+      colnames(result_table)[10] <- "X. laevis<br>Gene Name"
+      colnames(result_table)[11] <- "D. melanogaster<br>Gene Name"
+      colnames(result_table)[12] <- "Wormbase<br>ID"
+      colnames(result_table)[13] <- "C. elegans<br>Sequence ID"
+      colnames(result_table)[14] <- "C. elegans<br>Gene Name"
+      colnames(result_table)[15] <- "C. reinhardtii<br>Gene Name"
+      colnames(result_table)[16] <- "Subcellular<br>Localization"
+      colnames(result_table)[17] <- "Localisation<br>Reference"}
+    
+    result_table <- result_table[,colSums(is.na(result_table))<nrow(result_table)]
+
+    #Reference sorter
+    {
+      if ("M. musculus<br>Gene Name" %in% colnames(result_table)) result_table$"M. musculus<br>Gene Name" <- paste0("<a href= '"," https://www.ncbi.nlm.nih.gov/gene/?term=Mus+musculus ",
+                                                                                                                      result_table$"M. musculus<br>Gene Name","' target='_blank '>",result_table$"M. musculus<br>Gene Name","</a>")
+      if ("D. rerio<br>Gene Name" %in% colnames(result_table)) result_table$"D. rerio<br>Gene Name" <- paste0("<a href= '"," https://www.ncbi.nlm.nih.gov/gene/?term=Danio+rerio ",
+                                                                                                                    result_table$"D. rerio<br>Gene Name","' target='_blank '>",result_table$"D. rerio<br>Gene Name","</a>")
+      if ("X. laevis<br>Gene Name" %in% colnames(result_table)) result_table$"X. laevis<br>Gene Name" <- paste0("<a href= '"," https://www.ncbi.nlm.nih.gov/gene/?term=Xenopus+laevis ",result_table$"X. laevis<br>Gene Name",
+                                                                                                                "' target='_blank '>",result_table$"X. laevis<br>Gene Name","</a>")
+      
+      if ("D. melanogaster<br>Gene Name" %in% colnames(result_table)) result_table$"D. melanogaster<br>Gene Name" <- paste0("<a href= '"," https://www.ncbi.nlm.nih.gov/gene/?term=Drosophila+melanogaster "
+                                                                                                                            ,result_table$"D. melanogaster<br>Gene Name","' target='_blank '>",
+                                                                                                                            result_table$"D. melanogaster<br>Gene Name","</a>")
+      
+      if ("C. elegans<br>Gene Name" %in% colnames(result_table)) result_table$"C. elegans<br>Gene Name" <- paste0("<a href= '"," https://www.ncbi.nlm.nih.gov/gene/?term=Caenorhabditis+elegans ",
+                                                                                                                  result_table$"C. elegans<br>Gene Name","' target='_blank '>",result_table$"C. elegans<br>Gene Name","</a>")
+      
+      if ('Wormbase<br>ID' %in% colnames(result_table)) result_table$'Wormbase<br>ID' <- paste0("<a href= '","https://wormbase.org/search/gene/*",result_table$'Wormbase<br>ID',"' target='_blank '>",
+                                                                                          result_table$'Wormbase<br>ID',"</a>")
+      if ("C. reinhardtii<br>Gene Name" %in% colnames(result_table)) result_table$"C. reinhardtii<br>Gene Name" <- paste0("<a href= '"," https://www.ncbi.nlm.nih.gov/gene/?term=Chlamydomonas+reinhardtiis "
+                                                                                                                          ,result_table$"C. reinhardtii<br>Gene Name","' target='_blank '>",result_table$"C. reinhardtii<br>Gene Name","</a>")
+    }
+    
+    result_table <- result_table %>% arrange(Ciliopathy) %>% select(-one_of("Abbreviation","synonym"))
+    row.names(result_table) <- NULL
+    return(result_table)
+  }
+  
+  
+  
+  
+}
+
+
+
 #Color change function was used reordering symptoms icon colour.
 color_change <- function(ciliopathy_input,secondary_ciliopathy = FALSE){
   exception_list <- c("STAR Syndrome","Leber Congenital Amaurosis","Carpenter Syndrome")
