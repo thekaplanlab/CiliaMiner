@@ -805,14 +805,9 @@ server <- function(input, output, session) {
                                      server = FALSE,
                                      autoWidth = TRUE,
                                      searchHighlight = TRUE,
-                                     columnDefs = list(list(width = 'fit-content', targets = c(4,6,8), className="dt-center"),
-                                                       list(width = 'fit-content', targets = c(5), className="dt-center"),
-                                                       list(width = 'fit-content', targets = c(3,9), className="dt-center"),
-                                                       list(width = '3%', targets = c(2), className="dt-center"),
-                                                       list(visible=FALSE, targets = c(ncol(search_result_table))),
-                                                       list(width = 'fit-content',targets = c(7), className="dt-center"),
-                                                       list(width = 'fit-content',targets = c(10,11,12,13,14,15), className="dt-center" ),
-                                                       list(width = '15%', targets = c(1), className="dt-left")),
+                                     columnDefs = list(list(width = 'fit-content', targets = c(1), className="dt-left"),
+                                       list(width = 'fit-content', targets = c(2:ncol(search_result_table)), className="dt-center"),
+                                                       list(visible=FALSE, targets = c(ncol(search_result_table)))),
                                      lengthMenu = c(10,25,50,100,nrow(search_result_table)),
                                      buttons = c('copy', 'csv', 'excel', 'pdf', 'print')))
       }})

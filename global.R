@@ -25,7 +25,7 @@ library(base)            # R base functions
 
 
 
-load("data/env.rdata")   # Load Requiring Table
+load("data/env.Rdata")   # Load Requiring Table
 
 icons <- icon_set("www/") #Icon set 
 
