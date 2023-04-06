@@ -236,8 +236,8 @@ ui <-
                         p(strong("Search for a gene to list associated ciliopathy disorder(s)"),align = "middle", style = "font-size:30px; color: #ff7f0e"),
                         tabPanel("Gene Search",column(12,align="middle",
                                                       #Search Box
-                                                      searchInput(inputId = "search_gene_2",label = "",
-                                                                  placeholder = "Search by Human Gene Name and Gene ID",
+                                                      searchInput(inputId = "search_gene",label = "",
+                                                                  placeholder = "Search by Gene Name, Ensembl Gene ID or Gene ID",
                                                                   btnSearch = icon("search"),
                                                                   btnReset = icon("remove",verify_fa = FALSE),
                                                                   width = "50%",),
@@ -247,8 +247,7 @@ ui <-
                                                       tags$style(type="text/css", ".nav-pills {font-size: x-large;}"),
                                                       HTML(rep("<br/><br/>", 1)),
                                                       #Gene Search Result Table
-                                                      fixedRow(box(width = 12,background = "orange",status = 'primary',align = "left",
-                                                                   dataTableOutput('search_gene'),br(),style = "font-size:100%; width:100%")),))
+                                                      fluidRow(column(11,align = "left",dataTableOutput('search_gene_table') ,style = "font-size:100%; width:100%")),))
                         
                         
                         )))

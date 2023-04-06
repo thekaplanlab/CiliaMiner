@@ -736,7 +736,7 @@ server <- function(input, output, session) {
   }
   
   
-  #Potential Ciliopathy Genes page.Table and Heatmap
+  #Potential Ciliopathy Genes page Table and Heatmap
   
   {
     output$potential_ciliopathy_genes <- DT::renderDataTable({
@@ -781,6 +781,50 @@ server <- function(input, output, session) {
   }
   
 
+  #Gene Search Page 
+  {
+    output$search_gene_table <- DT::renderDataTable({
+      if( !(toupper((input$search_gene)) %in% toupper(unique(searching_gene)))){
+        if ( input$search_gene != ""){ # Send sweet alert 
+          sendSweetAlert(
+            session = session,
+            title = "This is not a ciliopathy related gene",
+            text = tags$span(tags$h3("Please try another gene")),
+            type = "info",
+            html = TRUE,
+            showCloseButton = TRUE
+          )
+        }
+      }
+      #Create Result Table
+      if(toupper((input$search_gene)) %in% toupper(unique(searching_gene))){
+        search_result_table <- gene_searh_function(input$search_gene)
+        DT::datatable(search_result_table, escape = FALSE,extensions = 'Buttons',width = "auto",
+                      options = list(dom = 'Blfrtip', 
+                                     initComplete = JS("function(settings, json) {$(this.api().table().header()).css({'white-space' : 'nowrap'});}"),
+                                     server = FALSE,
+                                     autoWidth = TRUE,
+                                     searchHighlight = TRUE,
+                                     columnDefs = list(list(width = 'fit-content', targets = c(4,6,8), className="dt-center"),
+                                                       list(width = 'fit-content', targets = c(5), className="dt-center"),
+                                                       list(width = 'fit-content', targets = c(3,9), className="dt-center"),
+                                                       list(width = '3%', targets = c(2), className="dt-center"),
+                                                       list(visible=FALSE, targets = c(ncol(search_result_table))),
+                                                       list(width = 'fit-content',targets = c(7), className="dt-center"),
+                                                       list(width = 'fit-content',targets = c(10,11,12,13,14,15), className="dt-center" ),
+                                                       list(width = '15%', targets = c(1), className="dt-left")),
+                                     lengthMenu = c(10,25,50,100,nrow(search_result_table)),
+                                     buttons = c('copy', 'csv', 'excel', 'pdf', 'print')))
+      }})
+    
+    
+    
+    
+    
+    
+  }
+  
+  
   #Ciliopathy Genes and Orthologs Page
   {
   
@@ -949,36 +993,37 @@ server <- function(input, output, session) {
                                  lengthMenu = c(10,25,50,100,nrow(ortholog_human_drerio)),
                                  buttons = c('copy', 'csv', 'excel', 'pdf', 'print')))
   })}
+    #Ortholog Human Chlamydomonas reinhardtiis Table
+    {  output$ortholog_human_creinhardtii <- DT::renderDataTable({
+      ortholog_human_creinhardtii$`C. reinhardtii Gene Name` <- paste0("<a href= '"," https://www.ncbi.nlm.nih.gov/gene/?term=Chlamydomonas+reinhardtiis "
+                                                                       ,ortholog_human_creinhardtii$`C. reinhardtii Gene Name`,"' target='_blank '>",ortholog_human_creinhardtii$`C. reinhardtii Gene Name`,"</a>")
+      ortholog_human_creinhardtii <- reference_sorter(ortholog_human_creinhardtii)
+      {colnames(ortholog_human_creinhardtii)[3] <- "OMIM<br>Phenotype Number"
+        colnames(ortholog_human_creinhardtii)[4] <- "Disease/Gene<br>Reference"
+        colnames(ortholog_human_creinhardtii)[5] <- "Human<br>Gene ID"
+        colnames(ortholog_human_creinhardtii)[6] <- "Human Gene<br>Name"
+        colnames(ortholog_human_creinhardtii)[7] <- "Gene MIM<br>Number"
+        colnames(ortholog_human_creinhardtii)[8] <- "C. reinhardtii<br>Gene Name"
+        colnames(ortholog_human_creinhardtii)[9] <- "Subcellular<br>Localization"
+        colnames(ortholog_human_creinhardtii)[10] <- "Localisation<br>Reference"
+      }
+      DT::datatable(ortholog_human_creinhardtii, escape = FALSE,extensions = 'Buttons',
+                    options = list(dom = 'Blfrtip', 
+                                   server = FALSE,
+                                   autoWidth = TRUE,
+                                   initComplete = JS("function(settings, json) {$(this.api().table().header()).css({'white-space' : 'nowrap'});}"),
+                                   searchHighlight = TRUE,
+                                   columnDefs = list(list(targets = 1, className = "dt-left"),
+                                                     list(targets = c(11,12), visible = FALSE),
+                                                     list(targets = c(2:10), className="dt-center")),
+                                   lengthMenu = c(10,25,50,100,nrow(ortholog_human_creinhardtii)),
+                                   buttons = c('copy', 'csv', 'excel', 'pdf', 'print')))
+      
+    })}
 
   }
   
-  #Ortholog Human Chlamydomonas reinhardtiis Table
-  {  output$ortholog_human_creinhardtii <- DT::renderDataTable({
-    ortholog_human_creinhardtii$`C. reinhardtii Gene Name` <- paste0("<a href= '"," https://www.ncbi.nlm.nih.gov/gene/?term=Chlamydomonas+reinhardtiis "
-                                                                              ,ortholog_human_creinhardtii$`C. reinhardtii Gene Name`,"' target='_blank '>",ortholog_human_creinhardtii$`C. reinhardtii Gene Name`,"</a>")
-    ortholog_human_creinhardtii <- reference_sorter(ortholog_human_creinhardtii)
-    {colnames(ortholog_human_creinhardtii)[3] <- "OMIM<br>Phenotype Number"
-      colnames(ortholog_human_creinhardtii)[4] <- "Disease/Gene<br>Reference"
-      colnames(ortholog_human_creinhardtii)[5] <- "Human<br>Gene ID"
-      colnames(ortholog_human_creinhardtii)[6] <- "Human Gene<br>Name"
-      colnames(ortholog_human_creinhardtii)[7] <- "Gene MIM<br>Number"
-      colnames(ortholog_human_creinhardtii)[8] <- "C. reinhardtii<br>Gene Name"
-      colnames(ortholog_human_creinhardtii)[9] <- "Subcellular<br>Localization"
-      colnames(ortholog_human_creinhardtii)[10] <- "Localisation<br>Reference"
-    }
-    DT::datatable(ortholog_human_creinhardtii, escape = FALSE,extensions = 'Buttons',
-                  options = list(dom = 'Blfrtip', 
-                                 server = FALSE,
-                                 autoWidth = TRUE,
-                                 initComplete = JS("function(settings, json) {$(this.api().table().header()).css({'white-space' : 'nowrap'});}"),
-                                 searchHighlight = TRUE,
-                                 columnDefs = list(list(targets = 1, className = "dt-left"),
-                                                   list(targets = c(11,12), visible = FALSE),
-                                                   list(targets = c(2:10), className="dt-center")),
-                                 lengthMenu = c(10,25,50,100,nrow(ortholog_human_creinhardtii)),
-                                 buttons = c('copy', 'csv', 'excel', 'pdf', 'print')))
-    
-  })}
+
   
   
   
