@@ -385,14 +385,61 @@ ui <-
              
              #About Page
              {
-             tabPanel("About",
-                      fluidPage(
-                        br(),
-                        br(),
-                        br(),
-                        br(),
-                        br(),
-                        br(),
-                        br(),
-                        p(strong("Coming soon..."), style = "font-size:50px; color:#FF4500",
-                          align = "center")))})
+               tabPanel("About",
+                        fluidPage(
+                          h2(strong("CiliaMiner")),
+                          div(style = "margin-left: 5%; margin-right: 5%;",
+                              h4("The 'CiliaMiner' database fills the requirement for an 
+                           all-encompassing database to gather data on ciliopathies and their associated genes. 
+                           The number of ciliopathy diseases and associated genes has rapidly increased over the past 
+                           20 years, making it difficult for researchers to get reliable and current information from 
+                           many sources. The authors create the CiliaMiner database as a solution to this problem and 
+                           as a useful tool for ciliopathies researchers, physicians, and fundamental scientists."),
+                              h4(strong("Comprehensive Gene and Disease Information: "),"CiliaMiner offers a comprehensive list of 
+                           ciliopathy diseases both known and unknown, along with associated symptoms and gene names. 
+                           The database is divided into primary, secondary, and motile ciliopathies, with each 
+                           category having details on certain genes and diseases."),
+                              h4(strong("Data on Subcellular Localization:"), "The database contains details on the 
+                        subcellular localization of proteins that are produced by genes that cause disease. 
+                        The study, for instance, shows that specific proteins are found in cilia, basal bodies, 
+                        transition zones, and other cellular compartments."),
+                              h4(strong("Tools for Visualization:"), "CiliaMiner provides a number of visualization tools 
+                        for side-by-side examination. Users can compare clinical signs and traits across various 
+                        ciliopathies using heatmaps. These resources help researchers spot similarities and 
+                        distinctions between ciliopathy illnesses."),
+                              h4(strong("Ortholog Information:"), "For researchers working with model organisms, 
+                        CiliaMiner provides information about orthologs of human ciliopathy-associated genes in 
+                        model species like mice, zebrafish, frogs, fruit flies, and worms. This feature facilitates 
+                        the study of ciliopathies in these organisms."),
+                              h4(strong("Continuously Updated:"),"The database will be continually updated to reflect the 
+                           most recent data when new discoveries are made and new data becomes available. "),
+                              h4(strong("Potential Candidate Genes:"),"The database not only includes a list of known 
+                           ciliopathy genes, but also prospective ciliopathy gene candidates. For researchers 
+                           looking for novel genetic connections to ciliopathies, this feature is helpful. 
+                           User-Friendly Interface: The CiliaMiner website has a simple user interface with search 
+                           options for disease, gene, and symptom names. Users can easily search the database for the 
+                           data they require.")),
+                          br(),
+                          h2(strong("Teams behind CiliaMiner")),
+                          div(style = "margin-left: 5%; margin-right: 5%",
+                              h4(a("Sebiha Çevik Kaplan", href = "https://scholar.google.de/citations?user=_o6sKOUAAAAJ",target="_blank")),
+                              h4(a("Oktay İsmail Kaplan",href = "https://scholar.google.com/citations?user=YFzvQQUAAAAJ",target="_blank")),
+                              h4(a("Merve Gül Turan",href = "https://scholar.google.com/citations?user=c7fjHRcAAAAJ",target="_blank")),
+                              h4(a("Mehmet Emin Orhan",href = "https://scholar.google.com.tr/citations?user=74bs5g8AAAAJ",target="_blank"))),
+                          
+                          h2(strong("Cite")),
+                          h4("Merve Gül Turan, Mehmet Emin Orhan and others, CiliaMiner: an integrated database for ciliopathy genes 
+                           and ciliopathies, Database, Volume 2023, 2023, baad047,",a("https://doi.org/10.1093/database/baad047",
+                                                                                      href = "https://doi.org/10.1093/database/baad047",
+                                                                                      target = "_blank"))
+                          
+                          
+                          
+                          
+                        ))}
+             
+             
+             
+             
+             
+             )
