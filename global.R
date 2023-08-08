@@ -25,7 +25,7 @@ library(base)            # R base functions
 
 
 
-load("data/env.Rdata")   # Load Requiring Table
+load("env/env.rdata")   # Load Requiring Table
 
 icons <- icon_set("www/") #Icon set 
 
@@ -51,7 +51,8 @@ list_Df <- rbind(purelist,secondarylist)
 {
   gene_searh_function <- function(gene_name){
     gene_name <- toupper(gene_name)
-    search_detect <- na.omit(ortholog_gene_synonym[str_detect(toupper(ortholog_gene_synonym$Synonym),paste0(gene_name,"\\b")),1])
+    search_detect <- unique(na.omit(ortholog_gene_synonym[str_detect(toupper(ortholog_gene_synonym$Synonym),paste0(gene_name,"\\b")),1]))
+    search_detect <- str_remove_all(search_detect," ")
     result_table <- all_ortholog[all_ortholog$'Human Gene Name' == search_detect,]
     result_table <- unique(result_table)
     result_table <- result_table[rowSums(is.na(result_table)) != ncol(result_table), ]
