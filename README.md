@@ -2,7 +2,7 @@
 # CiliaMiner: Ciliopathy Genes and Ciliopathies
 ### https://kaplanlab.shinyapps.io/ciliaminer/
 
-If you use workflow in your research, please consider citing;
+If you use CiliaMiner in your research, please consider citing;
 > Turan, M. G., Orhan, M. E., Cevik, S., & Kaplan, O. I. (2023). CiliaMiner: an integrated database for ciliopathy genes and ciliopathies. Database : the journal of biological databases and curation, 2023, baad047. https://doi.org/10.1093/database/baad047
 
 [**CiliaMiner**](https://kaplanlab.shinyapps.io/ciliaminer/) is a ciliopathy-specific database that compiles and presents the up-to-date list of ciliopathies, ciliopathy-associated genes, and the clinical features for each condition. Furthermore, CiliaMiner provides classifications of ciliopathies and associated disorders based on the subcellular localization of disease-associated genes in conjunction with disease symptoms. CiliaMiner suggests easy access to all ciliopathies, disease symptoms, ciliopathy genes, ciliopathy candidate genes, and orthologs of ciliopathy genes and ciliopathy candidate genes, seeking to serve as a major place in the ciliopathy database. Each piece of information is manually curated and verified before being uploaded to the appropriate part of the CiliaMiner database, and and users can also quickly submit their own data to CiliaMiner.
