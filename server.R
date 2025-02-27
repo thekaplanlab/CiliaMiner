@@ -127,7 +127,7 @@ server <- function(input, output, session) {
                 sizes = c(10, 25)
         )%>% config(displayModeBar = FALSE,modeBarButtonsToRemove = c("zoomIn2d", "zoomOut2d"))%>%
           layout(
-            title = 'Publication Numbers of Ciliopathy Related Genes (2000-2022)',
+            title = 'Publication Numbers of Ciliopathy Related Genes (2000-2024)',
             xaxis = list(showgrid = T,fixedrange = TRUE,title="Publication Years"),
             yaxis = list(showgrid = FALSE,fixedrange = TRUE, visible= FALSE))
       }
