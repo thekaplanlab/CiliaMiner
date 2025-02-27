@@ -53,7 +53,7 @@ ui <-
                                 ),
                          ),
                          #Homepage graphs are bubble, piechart, and barplot respectively.  
-                         column(6,align = "center",verticalLayout(HTML(rep("<br/><br/><br/><br/>", 1)),shinycssloaders::withSpinner(plotlyOutput("bubble",height = "100%",width = "100%"),type = 5,color = "#C81E1E") ,br(),
+                         column(6,align = "center",verticalLayout(h4("Last Update: 27.02.2025",align = "right"),HTML(rep("<br/>", 1)),shinycssloaders::withSpinner(plotlyOutput("bubble",height = "100%",width = "100%"),type = 5,color = "#C81E1E") ,br(),
                                                                  plotlyOutput("piechart",height = "50%"),br(),
                                                                  plotlyOutput("barplot",height = "50%")),
                                   
